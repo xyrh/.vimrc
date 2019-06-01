@@ -7,8 +7,8 @@ Plug 'mhinz/vim-signify'
 Plug 'w0rp/ale'
 Plug 'rking/ag.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'scrooloose/nerdtree'
-Plug 'majutsushi/tagbar'
+Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
+Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
 
 " delimitMate
