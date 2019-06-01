@@ -16,10 +16,6 @@ let delimitMate_expand_cr = 1
 
 " molokai
 colorscheme molokai
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
-	\ gui=NONE guifg=DarkGrey guibg=NONE
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
