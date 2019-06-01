@@ -9,6 +9,10 @@ elseif &ttimeoutlen > 80 || &ttimeoutlen <= 0
 	set ttimeoutlen=80
 endif
 
+if &term =~ '256color' && $TMUX != ''
+	set t_ut=
+endif
+
 set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.pyc,.pyo,.egg-info,.class
 set wildignore=*.o,*.obj,*~,*.exe,*.a,*.pdb,*.lib "stuff to ignore when tab completing
 set wildignore+=*.so,*.dll,*.swp,*.egg,*.jar,*.class,*.pyc,*.pyo,*.bin,*.dex
