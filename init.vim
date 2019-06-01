@@ -10,5 +10,6 @@ exec 'set rtp+='.s:home
 set rtp+=~/.vim
 
 LoadScript basic.vim
+LoadScript misc.vim
 LoadScript keymap.vim
 LoadScript plugin.vim
