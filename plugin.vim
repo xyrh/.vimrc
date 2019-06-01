@@ -3,7 +3,10 @@ Plug 'Raimondi/delimitMate'
 Plug 'tomasr/molokai'
 Plug 'mhinz/vim-startify'
 Plug 'Valloric/YouCompleteMe'
+Plug 'mhinz/vim-signify'
 Plug 'w0rp/ale'
+Plug 'rking/ag.vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " delimitMate
@@ -32,3 +35,9 @@ let g:ycm_filepath_blacklist = {
 	\ 'c': 1,
 	\}
 
+" ale
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
+
+" ag.vim
+let g:ag_working_path_mode= 'r'

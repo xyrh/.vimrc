@@ -4,6 +4,8 @@ nnoremap <silent><leader>q :q<CR>
 nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
+nnoremap <leader>q :q<ESC>
+nnoremap <leader>f :Ag<space>
 
 noremap <silent><m-1> :tabn 1<cr>
 noremap <silent><m-2> :tabn 2<cr>
