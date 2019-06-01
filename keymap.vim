@@ -2,8 +2,8 @@ inoremap <silent>zn <ESC>jo
 inoremap <silent><C-e> <END>
 nnoremap <silent><leader>q :q<CR>
 nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>[ O<ESC>
+nnoremap <leader>] o<ESC>
 
 noremap <silent><m-1> :tabn 1<cr>
 noremap <silent><m-2> :tabn 2<cr>

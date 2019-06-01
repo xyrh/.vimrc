@@ -19,9 +19,12 @@ set matchtime=2
 set display=lastline
 set wildmenu
 set lazyredraw
+set showcmd
+set splitright
 
 set ffs=unix,mac,dos
 set backspace=indent,eol,start
+set signcolumn=yes
 
 set autoindent
 set cindent
