@@ -7,6 +7,8 @@ Plug 'mhinz/vim-signify'
 Plug 'w0rp/ale'
 Plug 'rking/ag.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
 call plug#end()
 
 " delimitMate
