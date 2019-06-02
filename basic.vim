@@ -13,6 +13,8 @@ set ttimeout
 set ttimeoutlen=50
 
 set number
+set laststatus=2
+
 set hidden
 set showmatch
 set matchtime=2
