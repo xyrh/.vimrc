@@ -6,9 +6,11 @@ nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
 nnoremap <leader>q :q<ESC>
 
-nnoremap <leader>f :Ag<space>
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>g :Ag<Space>
+nnoremap <leader>p :CtrlP<cr>
+nnoremap <leader>f :CtrlPFunky<cr>
 
 noremap <silent><m-1> :tabn 1<cr>
 noremap <silent><m-2> :tabn 2<cr>
