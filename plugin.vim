@@ -72,7 +72,7 @@ let g:Lf_NormalMap = {
 		\ "Function": [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<cr>']],
 		\ }
 
-"gtags.vim
-let GtagsCscope_Auto_Load = 1
-let CtagsCscope_Auto_Map = 1
-let GtagsCscope_Quiet = 1
+" gtags-cscope.vim
+let g:GtagsCscope_Auto_Load = 1
+let g:GtagsCscope_Auto_Map = 1
+let g:GtagsCscope_Quiet  = 1
