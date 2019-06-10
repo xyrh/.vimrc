@@ -44,3 +44,6 @@ set incsearch
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,gb18030,big5,euc-jp,latin1
+
+set cscopetag
+set cscopeprg='gtags-cscope'
