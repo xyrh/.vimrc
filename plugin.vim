@@ -8,6 +8,7 @@ Plug 'rking/ag.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
+Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
@@ -53,3 +54,6 @@ let g:GtagsCscope_Quiet  = 1
 
 " NERDTree
 let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '\.[s]o$', '\.a$']
+
+" ack.vim
+let g:ackprg = 'ag --vimgrep'

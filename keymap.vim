@@ -62,5 +62,4 @@ function! FzyCommand(choice_command, vim_command)
 endfunction
 
 nnoremap <leader>e :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
-"nnoremap <leader>v :call FzyCommand("ag . --silent -l -g ''", ":vs")<cr>
-"nnoremap <leader>s :call FzyCommand("ag . --silent -l -g ''", ":sp")<cr>
+nnoremap <leader>f :Ack
