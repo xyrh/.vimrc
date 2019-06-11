@@ -8,7 +8,6 @@ nnoremap <leader>q :q<ESC>
 
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>t :TagbarToggle<CR>
-nnoremap <leader>g :Ag<Space>
 
 noremap <silent><m-1> :tabn 1<cr>
 noremap <silent><m-2> :tabn 2<cr>
@@ -49,3 +48,19 @@ if has('nvim') == 0 && has('gui_running') == 0
 	call s:metacode(c)
     endfor
 endif
+
+function! FzyCommand(choice_command, vim_command)
+  try
+    let output = system(a:choice_command . " | fzy ")
+  catch /Vim:Interrupt/
+    " Swallow errors from ^C, allow redraw! below
+  endtry
+  redraw!
+  if v:shell_error == 0 && !empty(output)
+    exec a:vim_command . ' ' . output
+  endif
+endfunction
+
+nnoremap <leader>e :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
+"nnoremap <leader>v :call FzyCommand("ag . --silent -l -g ''", ":vs")<cr>
+"nnoremap <leader>s :call FzyCommand("ag . --silent -l -g ''", ":sp")<cr>

@@ -36,21 +36,8 @@ call s:key_escape('<S-F10>', '[21;2~')
 call s:key_escape('<S-F11>', '[23;2~')
 call s:key_escape('<S-F12>', '[24;2~')
 
-hi! clear SpellBad
-hi! clear SpellCap
-hi! clear SpellRare
-hi! clear SpellLocal
-hi! SpellBad term=standout ctermfg=1 term=underline cterm=underline
-hi! SpellCap term=underline cterm=underline
-hi! SpellRare term=underline cterm=underline
-hi! SpellLocal term=underline cterm=underline
-hi! SignColumn guibg=NONE ctermbg=NONE
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
-	\ gui=NONE guifg=DarkGrey guibg=NONE
-hi! Pmenu guibg=gray guifg=black ctermbg=gray ctermfg=black
-hi! PmenuSel guibg=gray guifg=brown ctermbg=brown ctermfg=gray
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
+highlight clear SignColumn
+highlight clear LineNr
 
 set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.pyc,.pyo,.egg-info,.class
 set wildignore=*.o,*.obj,*~,*.exe,*.a,*.pdb,*.lib "stuff to ignore when tab completing
