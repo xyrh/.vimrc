@@ -20,9 +20,11 @@ set showmatch
 set matchtime=2
 set display=lastline
 set wildmenu
+set wildmode=list:longest,full
 set lazyredraw
 set showcmd
 set splitright
+set splitbelow
 
 set ffs=unix,mac,dos
 set backspace=indent,eol,start
