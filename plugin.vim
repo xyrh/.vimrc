@@ -56,3 +56,6 @@ let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$',
 
 " ack.vim
 let g:ackprg = 'ag --vimgrep'
+
+" startify
+let g:startify_disable_at_vimenter = 1
