@@ -7,6 +7,7 @@ Plug 'w0rp/ale'
 Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'mileszs/ack.vim'
+Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
