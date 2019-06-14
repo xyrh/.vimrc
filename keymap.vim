@@ -4,7 +4,7 @@ nnoremap <silent><leader>q :q<CR>
 nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
-nnoremap <leader>q :q<ESC>
+nnoremap <leader>q :ccl<ESC>
 
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>t :TagbarToggle<CR>
@@ -62,4 +62,5 @@ function! FzyCommand(choice_command, vim_command)
 endfunction
 
 nnoremap <leader>e :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
-nnoremap <leader>f :Ack
+nnoremap <leader>f :Ack! <cword>
+nnoremap <leader>g :Gtags -f %<CR>

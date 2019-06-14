@@ -47,9 +47,11 @@ let g:ag_working_path_mode= 'r'
 
 " gtags-cscope.vim
 let g:Gtags_Auto_Update = 1
+let g:Gtags_No_Auto_Jump = 1
 let g:GtagsCscope_Auto_Load = 1
 let g:GtagsCscope_Auto_Map = 1
 let g:GtagsCscope_Quiet  = 1
+let g:Gtags_Close_When_Single = 1
 
 " NERDTree
 let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '\.[s]o$', '\.a$']
