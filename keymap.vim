@@ -63,4 +63,4 @@ endfunction
 
 nnoremap <leader>e :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
 nnoremap <leader>f :Ack! <cword>
-nnoremap <leader>g :Gtags -f %<CR>
+nnoremap <leader>k :Man 3 <cword><cr>
