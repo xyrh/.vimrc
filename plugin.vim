@@ -3,7 +3,6 @@ Plug 'tomasr/molokai'
 Plug 'mhinz/vim-startify'
 Plug 'Valloric/YouCompleteMe'
 Plug 'mhinz/vim-signify'
-Plug 'w0rp/ale'
 Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'mileszs/ack.vim'
@@ -37,10 +36,6 @@ let g:ycm_filetype_whitelist = {
 let g:ycm_filepath_blacklist = {
 	\ 'c': 1,
 	\}
-
-" ale
-let g:ale_lint_on_text_changed = 'normal'
-let g:ale_lint_on_insert_leave = 1
 
 " ag.vim
 let g:ag_working_path_mode= 'r'
