@@ -1,24 +1,3 @@
-noremap <silent><m-1> :tabn 1<cr>
-noremap <silent><m-2> :tabn 2<cr>
-noremap <silent><m-3> :tabn 3<cr>
-noremap <silent><m-4> :tabn 4<cr>
-noremap <silent><m-5> :tabn 5<cr>
-noremap <silent><m-6> :tabn 6<cr>
-noremap <silent><m-7> :tabn 7<cr>
-noremap <silent><m-8> :tabn 8<cr>
-noremap <silent><m-9> :tabn 9<cr>
-noremap <silent><m-0> :tabn 10<cr>
-inoremap <silent><m-1> <ESC>:tabn 1<cr>
-inoremap <silent><m-2> <ESC>:tabn 2<cr>
-inoremap <silent><m-3> <ESC>:tabn 3<cr>
-inoremap <silent><m-4> <ESC>:tabn 4<cr>
-inoremap <silent><m-5> <ESC>:tabn 5<cr>
-inoremap <silent><m-6> <ESC>:tabn 6<cr>
-inoremap <silent><m-7> <ESC>:tabn 7<cr>
-inoremap <silent><m-8> <ESC>:tabn 8<cr>
-inoremap <silent><m-9> <ESC>:tabn 9<cr>
-inoremap <silent><m-0> <ESC>:tabn 10<cr>
-
 if has('nvim') == 0 && has('gui_running') == 0
     function! s:metacode(key)
 	exec "set <M-".a:key.">=\e".a:key
@@ -38,6 +17,19 @@ if has('nvim') == 0 && has('gui_running') == 0
     endfor
 endif
 
+noremap <silent><C-e> <END>
+noremap <silent><C-a> <HOME>
+inoremap <silent><C-e> <END>
+inoremap <silent><C-a> <HOME>
+nnoremap <silent><C-g> :ccl<CR>
+nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
+nnoremap <leader>[ O<ESC>
+nnoremap <leader>] o<ESC>
+
+nnoremap <leader>f :Ack! <cword>
+nnoremap <F7> :NERDTreeToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
+
 function! FzyCommand(choice_command, vim_command)
   try
     let output = system(a:choice_command . " | fzy ")
@@ -49,14 +41,4 @@ function! FzyCommand(choice_command, vim_command)
     exec a:vim_command . ' ' . output
   endif
 endfunction
-
-nnoremap <C-\> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
-nnoremap <leader>f :Ack! <cword>
-inoremap <silent><C-e> <END>
-nnoremap <silent><C-g> :ccl<CR>
-nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
-nnoremap <leader>[ O<ESC>
-nnoremap <leader>] o<ESC>
-
-nnoremap <F7> :NERDTreeToggle<CR>
-nnoremap <F8> :TagbarToggle<CR>
+nnoremap <C-p> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>

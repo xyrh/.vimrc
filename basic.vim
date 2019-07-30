@@ -14,7 +14,7 @@ set ttimeoutlen=50
 
 set number
 set laststatus=2
-set statusline=%<%F\ %w%h%m%r%=[%{&ff}\|%Y\|%{&enc}]
+"set statusline=%<%F\ %w%h%m%r%=[%{&ff}\|%{&enc}]
 
 set hidden
 set showmatch
