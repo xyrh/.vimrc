@@ -53,7 +53,7 @@ endfunction
 nnoremap <C-\> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
 nnoremap <leader>f :Ack! <cword>
 inoremap <silent><C-e> <END>
-nnoremap <silent><C-g> :q<CR>
+nnoremap <silent><C-g> :ccl<CR>
 nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
