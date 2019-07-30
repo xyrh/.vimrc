@@ -1,14 +1,3 @@
-inoremap <silent>zn <ESC>jo
-inoremap <silent><C-e> <END>
-nnoremap <silent><leader>q :q<CR>
-nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
-nnoremap <leader>[ O<ESC>
-nnoremap <leader>] o<ESC>
-nnoremap <leader>q :ccl<ESC>
-
-nnoremap <leader>n :NERDTreeToggle<CR>
-nnoremap <leader>t :TagbarToggle<CR>
-
 noremap <silent><m-1> :tabn 1<cr>
 noremap <silent><m-2> :tabn 2<cr>
 noremap <silent><m-3> :tabn 3<cr>
@@ -61,6 +50,13 @@ function! FzyCommand(choice_command, vim_command)
   endif
 endfunction
 
-nnoremap <leader>e :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
+nnoremap <C-\> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
 nnoremap <leader>f :Ack! <cword>
-nnoremap <leader>k :Man 3 <cword><cr>
+inoremap <silent><C-e> <END>
+nnoremap <silent><C-g> :q<CR>
+nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
+nnoremap <leader>[ O<ESC>
+nnoremap <leader>] o<ESC>
+
+nnoremap <F7> :NERDTreeToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
