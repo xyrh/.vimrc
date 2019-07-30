@@ -17,14 +17,17 @@ if has('nvim') == 0 && has('gui_running') == 0
     endfor
 endif
 
-noremap <silent><C-e> <END>
-noremap <silent><C-a> <HOME>
-inoremap <silent><C-e> <END>
-inoremap <silent><C-a> <HOME>
-nnoremap <silent><C-g> :ccl<CR>
+noremap <silent> <C-e> <END>
+noremap <silent> <C-a> <HOME>
+inoremap <silent> <C-e> <END>
+inoremap <silent> <C-a> <HOME>
+nnoremap <silent> <C-g> :ccl<CR>
 nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
+
+nnoremap <silent> <C-k> :ALEPreviousWrap<CR>
+nnoremap <silent> <C-j> :ALENextWrap<CR>
 
 nnoremap <leader>f :Ack! <cword>
 nnoremap <F7> :NERDTreeToggle<CR>

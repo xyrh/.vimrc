@@ -35,6 +35,11 @@ let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$',
 " ack.vim
 let g:ackprg = 'ag --vimgrep'
 
+" ale
+let g:ale_linters = {
+\   'c': ['gcc'],
+\}
+
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 let g:ycm_show_diagnostics_ui = 0
