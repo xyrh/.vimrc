@@ -46,5 +46,5 @@ endfunction
 nnoremap <C-_> :call FzyCommand("rg --files --hidden -g '!.git/*' .", ":e")<cr>
 nnoremap <M-/> :LeaderfFunction!<cr>
 nnoremap <C-s> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
-nnoremap <C-S> :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", expand("<cword>"))<CR>
+nnoremap <leader>f :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", expand("<cword>"))<CR>
 nnoremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>
