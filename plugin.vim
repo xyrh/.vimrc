@@ -8,10 +8,9 @@ Plug 'easymotion/vim-easymotion'
 Plug 'dense-analysis/ale'
 Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
-"Plug 'ycm-core/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
-Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
 
 " delimitMate

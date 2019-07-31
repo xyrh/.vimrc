@@ -35,7 +35,6 @@ noremap <leader>f :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", e
 noremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>
 
 nnoremap <F7> :NERDTreeToggle<CR>
-nnoremap <F8> :TagbarToggle<CR>
 
 function! FzyCommand(choice_command, vim_command)
   try
