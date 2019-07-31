@@ -8,7 +8,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'dense-analysis/ale'
 Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'ycm-core/YouCompleteMe'
+"Plug 'ycm-core/YouCompleteMe'
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
@@ -39,6 +40,17 @@ let g:ackprg = 'ag --vimgrep'
 let g:ale_linters = {
 \   'c': ['gcc'],
 \}
+
+" LeaderF
+let g:Lf_WorkingDirectoryMode = 'Ac'
+let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
+
+let g:Lf_WildIgnore = {
+	  \ 'dir': ['.svn','.git','.hg'],
+	  \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+	  \}
+
+let g:Lf_MruFileExclude = ['*.so'] 
 
 " YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'

@@ -29,7 +29,11 @@ nnoremap <leader>] o<ESC>
 nnoremap <silent> <C-k> :ALEPreviousWrap<CR>
 nnoremap <silent> <C-j> :ALENextWrap<CR>
 
-nnoremap <leader>f :Ack! <cword>
+noremap <M-p> :LeaderfFunction!<cr>
+noremap <M-/> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+noremap <leader>f :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", expand("<cword>"))<CR>
+noremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>
+
 nnoremap <F7> :NERDTreeToggle<CR>
 nnoremap <F8> :TagbarToggle<CR>
 
@@ -44,4 +48,4 @@ function! FzyCommand(choice_command, vim_command)
     exec a:vim_command . ' ' . output
   endif
 endfunction
-nnoremap <C-p> :call FzyCommand("ag . --silent -l -g ''", ":e")<cr>
+nnoremap <C-p> :call FzyCommand("rg --files --hidden -g '!.git/*' .", ":e")<cr>
