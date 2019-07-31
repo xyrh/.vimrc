@@ -29,11 +29,6 @@ nnoremap <leader>] o<ESC>
 nnoremap <silent> <C-k> :ALEPreviousWrap<CR>
 nnoremap <silent> <C-j> :ALENextWrap<CR>
 
-noremap <M-p> :LeaderfFunction!<cr>
-noremap <M-/> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
-noremap <leader>f :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", expand("<cword>"))<CR>
-noremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>
-
 nnoremap <F7> :NERDTreeToggle<CR>
 
 function! FzyCommand(choice_command, vim_command)
@@ -47,4 +42,9 @@ function! FzyCommand(choice_command, vim_command)
     exec a:vim_command . ' ' . output
   endif
 endfunction
-nnoremap <C-p> :call FzyCommand("rg --files --hidden -g '!.git/*' .", ":e")<cr>
+
+nnoremap <C-_> :call FzyCommand("rg --files --hidden -g '!.git/*' .", ":e")<cr>
+nnoremap <M-/> :LeaderfFunction!<cr>
+nnoremap <C-s> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
+nnoremap <C-S> :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", expand("<cword>"))<CR>
+nnoremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>

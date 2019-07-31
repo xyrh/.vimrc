@@ -3,11 +3,10 @@ Plug 'tomasr/molokai'
 Plug 'mhinz/vim-signify'
 Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
-Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'dense-analysis/ale'
 Plug 'itchyny/lightline.vim'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
@@ -31,9 +30,6 @@ let g:GtagsCscope_Quiet  = 1
 
 " NERDTree
 let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '\.[s]o$', '\.a$']
-
-" ack.vim
-let g:ackprg = 'ag --vimgrep'
 
 " ale
 let g:ale_linters = {
