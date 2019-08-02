@@ -17,6 +17,9 @@ if has('nvim') == 0 && has('gui_running') == 0
     endfor
 endif
 
+vnoremap < <gv
+vnoremap > >gv
+
 noremap <silent> <C-e> <END>
 noremap <silent> <C-a> <HOME>
 inoremap <silent> <C-e> <END>
