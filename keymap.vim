@@ -20,11 +20,10 @@ endif
 vnoremap < <gv
 vnoremap > >gv
 
-noremap <silent> <C-e> <END>
-noremap <silent> <C-a> <HOME>
+nnoremap <silent> <C-e> <END>
+nnoremap <silent> <C-a> <HOME>
 inoremap <silent> <C-e> <END>
 inoremap <silent> <C-a> <HOME>
-nnoremap <silent> <C-g> :ccl<CR>
 nnoremap <leader>l :nohlsearch<cr>:diffupdate<cr>:syntax sync fromstart<cr><c-l>
 nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
