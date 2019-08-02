@@ -5,7 +5,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'easymotion/vim-easymotion'
 Plug 'dense-analysis/ale'
-Plug 'itchyny/lightline.vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
