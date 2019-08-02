@@ -5,6 +5,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'easymotion/vim-easymotion'
 Plug 'mg979/vim-visual-multi'
+Plug 'xavierd/clang_complete'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 call plug#end()
@@ -35,3 +36,6 @@ let g:Lf_WildIgnore = {
 	  \}
 
 let g:Lf_MruFileExclude = ['*.so'] 
+
+" clang_complete
+let g:clang_library_path='/home/huaxin/WorkSpace/github/clang/lib'
