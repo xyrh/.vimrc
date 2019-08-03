@@ -5,7 +5,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'easymotion/vim-easymotion'
 Plug 'mg979/vim-visual-multi'
-Plug 'ycm-core/YouCompleteMe', { 'on':[] }
+Plug 'ycm-core/YouCompleteMe'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 call plug#end()
