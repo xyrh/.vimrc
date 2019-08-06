@@ -45,11 +45,10 @@ function! FzyCommand(choice_command, vim_command)
   endif
 endfunction
 
-nnoremap <leader><space> :ccl<CR>
+nnoremap \ :ccl<CR>
 nnoremap <C-_> :call FzyCommand("rg --files --hidden -g '!.git/*' .", ":e")<cr>
 nnoremap <M-/> :LeaderfFunction!<cr>
 nnoremap <C-s> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
-nnoremap <C-S> :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", expand("<cword>"))<CR>
+nnoremap <M-s> :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", expand("<cword>"))<CR>
 nnoremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>
-nnoremap \ :terminal<CR>
-nnoremap <M-.> :GtagsCursor<CR>
+nnoremap <silent> <M-.> :GtagsCursor<CR>
