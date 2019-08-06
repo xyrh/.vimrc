@@ -16,6 +16,10 @@ let delimitMate_expand_cr = 1
 " molokai
 colorscheme molokai
 
+" easymotion
+let g:EasyMotion_do_mapping = 1
+let g:EasyMotion_leader_key = '<leader>'
+
 " gtags-cscope.vim
 let g:Gtags_Auto_Update = 1
 let g:Gtags_No_Auto_Jump = 1
@@ -27,6 +31,8 @@ let g:GtagsCscope_Quiet  = 1
 let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '\.[s]o$', '\.a$']
 
 " LeaderF
+let g:Lf_ShortcutF = ''
+let g:Lf_ShortcutB = ''
 let g:Lf_WorkingDirectoryMode = 'Ac'
 let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
 
