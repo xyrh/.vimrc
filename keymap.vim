@@ -32,6 +32,7 @@ nnoremap <silent> <C-k> :ALEPreviousWrap<CR>
 nnoremap <silent> <C-j> :ALENextWrap<CR>
 
 nnoremap <F7> :NERDTreeToggle<CR>
+set pastetoggle=<F3>
 
 function! FzyCommand(choice_command, vim_command)
   try
@@ -45,7 +46,9 @@ function! FzyCommand(choice_command, vim_command)
   endif
 endfunction
 
-nnoremap \ :ccl<CR>
+nnoremap q :q<CR>
+nnoremap - :ccl<CR>
+nnoremap \ :terminal<CR>
 nnoremap <C-_> :call FzyCommand("rg --files --hidden -g '!.git/*' .", ":e")<cr>
 nnoremap <M-/> :LeaderfFunction!<cr>
 nnoremap <C-s> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>

@@ -1,20 +1,17 @@
 call plug#begin('~/.vim/plugged')
-Plug 'tomasr/molokai'
 Plug 'mhinz/vim-signify'
 Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'easymotion/vim-easymotion'
 Plug 'mg979/vim-visual-multi'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'itchyny/lightline.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 call plug#end()
 
 " delimitMate
 let delimitMate_expand_cr = 1
-
-" molokai
-colorscheme molokai
 
 " easymotion
 let g:EasyMotion_do_mapping = 1

@@ -3,9 +3,10 @@ filetype plugin indent on
 
 let mapleader=" "
 set shortmess=atI
-set pastetoggle=<F3>
 
 set t_Co=256
+colorscheme desert
+
 syntax enable
 syntax on
 
@@ -14,7 +15,6 @@ set ttimeoutlen=50
 
 set number
 set laststatus=2
-set statusline=%<%F\ %w%h%m%r%=[%{&ff}\|%{&enc}]
 
 set hidden
 set showmatch
@@ -50,3 +50,4 @@ set fileencodings=ucs-bom,utf-8,gbk,gb18030,big5,euc-jp,latin1
 
 set cscopetag
 set completeopt-=preview
+set makeprg=sh\ mk.sh

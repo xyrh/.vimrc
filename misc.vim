@@ -36,9 +36,6 @@ call s:key_escape('<S-F10>', '[21;2~')
 call s:key_escape('<S-F11>', '[23;2~')
 call s:key_escape('<S-F12>', '[24;2~')
 
-highlight clear SignColumn
-highlight clear LineNr
-
 set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.pyc,.pyo,.egg-info,.class
 set wildignore=*.o,*.obj,*~,*.exe,*.a,*.pdb,*.lib "stuff to ignore when tab completing
 set wildignore+=*.so,*.dll,*.swp,*.egg,*.jar,*.class,*.pyc,*.pyo,*.bin,*.dex
