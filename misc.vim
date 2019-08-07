@@ -19,6 +19,23 @@ function! s:key_escape(name, code)
 	endif
 endfunc
 
+if &synmaxcol == 3000
+  " Lowering this improves performance in files with long lines.
+  set synmaxcol=500
+endif
+
+if &listchars ==# 'eol:$'
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
+endif
+
+if v:version > 703 || v:version == 703 && has("patch541")
+  set formatoptions+=j " Delete comment character when joining commented lines
+endif
+
+if has('path_extra')
+  setglobal tags-=./tags tags-=./tags; tags^=./tags;
+endif
+
 call s:key_escape('<F1>', 'OP')
 call s:key_escape('<F2>', 'OQ')
 call s:key_escape('<F3>', 'OR')

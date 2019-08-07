@@ -1,14 +1,17 @@
 set nocompatible
-filetype plugin indent on
-
-let mapleader=" "
-set shortmess=atI
-
 set t_Co=256
 colorscheme desert
 
-syntax enable
-syntax on
+if has('autocmd')
+  filetype plugin indent on
+endif
+
+if has('syntax') && !exists('g:syntax_on')
+  syntax enable
+endif
+
+let mapleader=" "
+set shortmess=atI
 
 set ttimeout
 set ttimeoutlen=50
@@ -30,6 +33,9 @@ set splitbelow
 set ffs=unix,mac,dos
 set backspace=indent,eol,start
 set signcolumn=yes
+set nrformats-=octal
+set display+=lastline
+set sessionoptions-=options
 
 set autoindent
 set cindent
@@ -38,6 +44,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set smarttab
 
 set ignorecase
 set smartcase
