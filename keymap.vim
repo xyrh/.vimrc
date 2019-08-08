@@ -24,7 +24,7 @@ nnoremap <silent> <C-e> <END>
 nnoremap <silent> <C-a> <HOME>
 inoremap <silent> <C-e> <END>
 inoremap <silent> <C-a> <HOME>
-nnoremap <leader>l :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
 
