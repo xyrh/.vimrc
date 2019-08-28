@@ -48,7 +48,7 @@ endfunction
 
 nnoremap q :q<CR>
 nnoremap - :ccl<CR>
-nnoremap \ :terminal<CR>
+nnoremap <buffer> <nowait> \ :terminal<CR>
 nnoremap <C-_> :call FzyCommand("rg --files --hidden -g '!.git/*' .", ":e")<cr>
 nnoremap <M-/> :LeaderfFunction!<cr>
 nnoremap <C-s> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
