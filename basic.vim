@@ -22,14 +22,15 @@ set ttimeoutlen=50
 
 set number
 set laststatus=2
+set nofoldenable
 
 set hidden
 set showmatch
 set matchtime=2
-set display=lastline
 set wildmenu
 set wildmode=list:longest,full
 set lazyredraw
+set ttyfast
 set showcmd
 set splitright
 set splitbelow
@@ -44,10 +45,10 @@ set sessionoptions-=options
 set autoindent
 set cindent
 
+set smarttab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set smarttab
 
 set ignorecase
 set smartcase
@@ -61,4 +62,4 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 set cscopetag
 set completeopt-=preview
-set makeprg=sh\ mk.sh
+"set makeprg=sh\ mk.sh
