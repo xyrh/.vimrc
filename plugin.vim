@@ -5,6 +5,7 @@ Plug 'xyrh/gtags'
 Plug 'easymotion/vim-easymotion'
 Plug 'mg979/vim-visual-multi'
 Plug 'itchyny/lightline.vim'
+Plug 'maralla/completor.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 call plug#end()
@@ -38,3 +39,7 @@ let g:Lf_WildIgnore = {
 	  \}
 
 let g:Lf_MruFileExclude = ['*.so'] 
+
+" completor.vim
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
