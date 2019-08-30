@@ -4,6 +4,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'easymotion/vim-easymotion'
 Plug 'mg979/vim-visual-multi'
+Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
@@ -43,3 +44,9 @@ let g:Lf_MruFileExclude = ['*.so']
 " completor.vim
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" gruvbox
+set background=dark
+let g:gruvbox_contrast_dark='medium'
+let g:gitgutter_override_sign_column_highlight = 1
+colorscheme gruvbox

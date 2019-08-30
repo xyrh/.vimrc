@@ -1,13 +1,17 @@
 set nocompatible
-set t_Co=256
-colorscheme desert
 
 if has('autocmd')
-  filetype plugin indent on
+	filetype plugin indent on
 endif
 
 if has('syntax') && !exists('g:syntax_on')
-  syntax enable
+	syntax enable
+endif
+
+if has("termguicolors")
+	let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+	let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+	set termguicolors
 endif
 
 let mapleader=" "
