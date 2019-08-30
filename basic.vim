@@ -51,7 +51,13 @@ set hlsearch
 set incsearch
 
 set encoding=utf-8
-set fileencodings=ucs-bom,utf-8,gb18030,cp936,latin1
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set langmenu=zh_CN.utf-8
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+language messages zh_CN.UTF-8
 
 set cscopetag
 set completeopt-=preview
