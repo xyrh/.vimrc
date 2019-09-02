@@ -46,5 +46,7 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " solarized8
+let g:solarized_statusline = "flat"
+let g:solarized_termtrans = 1
 set background=dark
-colorscheme solarized8
+colorscheme solarized8_flat
