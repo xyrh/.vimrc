@@ -4,7 +4,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'easymotion/vim-easymotion'
 Plug 'mg979/vim-visual-multi'
-Plug 'crusoexia/vim-monokai'
+Plug 'lifepillar/vim-solarized8'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
@@ -45,5 +45,6 @@ let g:Lf_MruFileExclude = ['*.so']
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" monokai
-colorscheme monokai
+" solarized8
+set background=dark
+colorscheme solarized8
