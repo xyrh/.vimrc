@@ -50,3 +50,13 @@ let g:solarized_statusline = "flat"
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized8_flat
+
+" lightline
+let g:lightline = {
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename',
+      \ }
+      \ }
+function! LightlineFilename()
+  return expand('%:~')
+endfunction
