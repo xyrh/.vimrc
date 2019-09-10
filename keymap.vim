@@ -29,6 +29,7 @@ nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
 
 nnoremap <F7> :NERDTreeToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F3>
 
 function! FzyCommand(choice_command, vim_command)

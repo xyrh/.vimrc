@@ -8,6 +8,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
+Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
 
 " delimitMate
