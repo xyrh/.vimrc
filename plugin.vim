@@ -8,7 +8,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
@@ -29,19 +28,6 @@ let g:GtagsCscope_Quiet  = 1
 
 " NERDTree
 let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '\.[s]o$', '\.a$']
-
-" LeaderF
-let g:Lf_ShortcutF = ''
-let g:Lf_ShortcutB = ''
-let g:Lf_WorkingDirectoryMode = 'Ac'
-let g:Lf_PreviewResult = {'Function':0, 'BufTag':0}
-
-let g:Lf_WildIgnore = {
-	  \ 'dir': ['.svn','.git','.hg'],
-	  \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
-	  \}
-
-let g:Lf_MruFileExclude = ['*.so'] 
 
 " completor.vim
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
