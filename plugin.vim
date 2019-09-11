@@ -3,7 +3,7 @@ Plug 'mhinz/vim-signify'
 Plug 'Raimondi/delimitMate'
 Plug 'xyrh/gtags'
 Plug 'easymotion/vim-easymotion'
-Plug 'lifepillar/vim-solarized8'
+Plug 'junegunn/seoul256.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -33,11 +33,9 @@ let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$',
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" solarized8
-let g:solarized_statusline = "flat"
-let g:solarized_termtrans = 1
-set background=dark
-colorscheme solarized8_flat
+" seoul256
+let g:seoul256_srgb = 1
+colorscheme seoul256
 
 " lightline
 let g:lightline = {
