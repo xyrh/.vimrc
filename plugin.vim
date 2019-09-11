@@ -6,6 +6,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'lifepillar/vim-solarized8'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}

@@ -32,24 +32,10 @@ nnoremap <F7> :NERDTreeToggle<CR>
 nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F3>
 
-function! FzyCommand(choice_command, vim_command)
-  try
-    let output = system(a:choice_command . " | fzy ")
-  catch /Vim:Interrupt/
-    " Swallow errors from ^C, allow redraw! below
-  endtry
-  redraw!
-  if v:shell_error == 0 && !empty(output)
-    exec a:vim_command . ' ' . output
-  endif
-endfunction
-
 nnoremap q :q<CR>
 nnoremap - :ccl<CR>
 nnoremap <nowait> \ :normal zt<CR>
-nnoremap <C-_> :call FzyCommand("rg --files --hidden -g '!.git/*' .", ":e")<cr>
-nnoremap <M-/> :LeaderfFunction!<cr>
+nnoremap <C-_> :Files<CR>
+nnoremap <M-/> :BTags<CR>
 nnoremap <C-s> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
-nnoremap <M-s> :<C-U><C-R>=printf("Leaderf! rg -F --current-buffer -e %s ", expand("<cword>"))<CR>
-nnoremap go :<C-U>Leaderf! rg --stayOpen --recall<CR>
-nnoremap <silent> <M-.> :GtagsCursor<CR>
+nnoremap <C-s> :Rg <C-R><C-W>
