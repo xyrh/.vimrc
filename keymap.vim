@@ -37,5 +37,3 @@ nnoremap - :ccl<CR>
 nnoremap <nowait> \ :normal zt<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
-nnoremap <C-s> :<C-U><C-R>=printf("Leaderf! rg -e %s ", expand("<cword>"))<CR>
-nnoremap <C-s> :Rg <C-R><C-W>
