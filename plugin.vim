@@ -8,7 +8,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'xyrh/translate.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+Plug 'xyrh/fzf.vim'
 Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
 Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
