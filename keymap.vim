@@ -33,7 +33,9 @@ nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F3>
 
 nnoremap q :q<CR>
-nnoremap - :Fg <C-R>=expand("<cword>")<CR>
+nnoremap s :Fg <C-R>=expand("<cword>")<CR>
+nnoremap - :ccl<CR>
 nnoremap <nowait> \ :Rg <C-R>=expand("<cword>")<CR>
+nnoremap <nowait> t :Baidu <C-R>=expand("<cword>")<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>

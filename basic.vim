@@ -14,6 +14,8 @@ if has("termguicolors")
 	set termguicolors
 endif
 
+runtime macros/matchit.vim
+
 let mapleader=" "
 set shortmess=atI
 
