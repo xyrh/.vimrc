@@ -33,6 +33,7 @@ nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F3>
 
 nnoremap q :q<CR>
+nnoremap ; :call ShowFuncName()<CR>
 nnoremap s :Fg <C-R>=expand("<cword>")<CR>
 nnoremap - :ccl<CR>
 nnoremap <nowait> \ :Rg <C-R>=expand("<cword>")<CR>
