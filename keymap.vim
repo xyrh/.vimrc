@@ -33,10 +33,11 @@ nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F3>
 
 nnoremap q :q<CR>
-nnoremap ; :call ShowFuncName()<CR>
+nnoremap <C-n> :call ShowFuncName()<CR>
+nnoremap <silent> <C-p> :normal [[kf(b<CR>
 nnoremap s :Fg <C-R>=expand("<cword>")<CR>
 nnoremap - :ccl<CR>
-nnoremap <nowait> \ :Rg <C-R>=expand("<cword>")<CR>
+nnoremap ; :Rg <C-R>=expand("<cword>")<CR>
 nnoremap <nowait> t :Baidu <C-R>=expand("<cword>")<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
