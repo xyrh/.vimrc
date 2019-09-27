@@ -6,8 +6,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/seoul256.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
-Plug 'inkarkat/vim-ingo-library'
-Plug 'inkarkat/vim-mark'
 Plug 'xyrh/translate.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'xyrh/fzf.vim'
@@ -49,7 +47,3 @@ let g:lightline = {
 function! LightlineFilename()
   return expand('%:~')
 endfunction
-
-" vim-mark
-nmap <C-j> <Plug>MarkSearchOrCurNext
-nmap <C-h> <Plug>MarkSearchOrCurPrev
