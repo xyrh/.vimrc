@@ -38,6 +38,7 @@ nnoremap <silent> <C-p> :normal [[kf(b<CR>
 nnoremap s :Fg <C-R>=expand("<cword>")<CR>
 nnoremap - :ccl<CR>
 nnoremap ; :Rg <C-R>=expand("<cword>")<CR>
-nnoremap <nowait> t :Baidu <C-R>=expand("<cword>")<CR>
+nnoremap <nowait> t :NB <C-R>=expand("<cword>")<CR>
+vnoremap <silent> t :<C-u>VB<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>

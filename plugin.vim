@@ -47,3 +47,6 @@ let g:lightline = {
 function! LightlineFilename()
   return expand('%:~')
 endfunction
+
+" Man
+let g:ft_man_open_mode = 'vert'
