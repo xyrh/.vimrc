@@ -46,3 +46,4 @@ nnoremap <nowait> t :NB <C-R>=expand("<cword>")<CR>
 vnoremap <silent> t :<C-u>VB<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
+nnoremap <nowait> \ :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
