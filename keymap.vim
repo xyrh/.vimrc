@@ -39,10 +39,11 @@ set pastetoggle=<F3>
 nnoremap q :q<CR>
 nnoremap <C-n> :call ShowFuncName()<CR>
 nnoremap <silent> <C-p> :normal [[kf(b<CR>
-nnoremap - :ccl<CR>
-nnoremap s :Rg <C-R>=expand("<cword>")<CR>
+nnoremap - :Cg <C-R>=expand("<cword>")<CR>
+nnoremap ; :Rg <C-R>=expand("<cword>")<CR>
 nnoremap <nowait> t :NB <C-R>=expand("<cword>")<CR>
 vnoremap <silent> t :<C-u>VB<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
+nmap <unique> s <Plug>MarkSet
 nnoremap <nowait> \ :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
