@@ -19,6 +19,10 @@ function! s:key_escape(name, code)
 	endif
 endfunc
 
+function! JumpFuncName()
+  call search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW')
+endfunction
+
 function! ShowFuncName()
   let lnum = line(".")
   let col = col(".")

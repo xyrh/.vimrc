@@ -41,8 +41,6 @@ inoremap <silent><m-8> <ESC>:tabn 8<cr>
 inoremap <silent><m-9> <ESC>:tabn 9<cr>
 inoremap <silent><m-0> <ESC>:tabn 10<cr>
 
-nnoremap <silent> <C-e> <END>
-nnoremap <silent> <C-a> <HOME>
 inoremap <silent> <C-e> <END>
 inoremap <silent> <C-a> <HOME>
 inoremap <silent> <C-l> <Right>
@@ -59,12 +57,9 @@ set pastetoggle=<F3>
 
 nnoremap q :q<CR>
 nnoremap <C-n> :call ShowFuncName()<CR>
-nnoremap <silent> <C-p> :normal [[kf(b<CR>
-nnoremap - :Cg <C-R>=expand("<cword>")<CR>
+nnoremap <C-p> :call JumpFuncName()<CR>
 nnoremap ; :Rg <C-R>=expand("<cword>")<CR>
-nnoremap <nowait> t :NB <C-R>=expand("<cword>")<CR>
-vnoremap <silent> t :<C-u>VB<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
-nmap <unique> s <Plug>MarkSet
+nmap <unique> - <Plug>MarkSet
 nnoremap <nowait> \ :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>

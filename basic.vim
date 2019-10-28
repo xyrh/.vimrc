@@ -23,6 +23,7 @@ set ttimeoutlen=50
 set number
 set laststatus=2
 set nofoldenable
+set autoread
 
 set hidden
 set showmatch
