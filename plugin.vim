@@ -6,7 +6,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/seoul256.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
-Plug 'xyrh/translate.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'inkarkat/vim-ingo-library'
