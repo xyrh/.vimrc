@@ -58,7 +58,7 @@ set pastetoggle=<F3>
 nnoremap q :q<CR>
 nnoremap <C-n> :call ShowFuncName()<CR>
 nnoremap <C-p> :call JumpFuncName()<CR>
-nnoremap ; :Rg <C-R>=expand("<cword>")<CR>
+nnoremap ; :Rg <C-R>=expand("<cword>")<CR><space>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
 nmap <unique> - <Plug>MarkSet
