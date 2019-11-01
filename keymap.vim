@@ -61,5 +61,5 @@ nnoremap <C-p> :call JumpFuncName()<CR>
 nnoremap ; :Rg <C-R>=expand("<cword>")<CR><space>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
-nmap <unique> - <Plug>MarkSet
+nmap <unique> s <Plug>MarkSet
 nnoremap <nowait> \ :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
