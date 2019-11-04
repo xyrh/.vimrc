@@ -19,6 +19,7 @@ set shortmess=atI
 
 set ttimeout
 set ttimeoutlen=50
+set updatetime=2000
 
 set number
 set laststatus=2
