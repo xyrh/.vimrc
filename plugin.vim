@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'mhinz/vim-signify'
 Plug 'Raimondi/delimitMate'
-Plug 'xyrh/gtags'
+Plug 'xyrh/global.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/seoul256.vim'
 Plug 'itchyny/lightline.vim'
@@ -20,13 +20,6 @@ let delimitMate_expand_cr = 1
 " easymotion
 let g:EasyMotion_do_mapping = 1
 let g:EasyMotion_leader_key = '<leader>'
-
-" gtags-cscope.vim
-let g:Gtags_Auto_Update = 1
-let g:Gtags_No_Auto_Jump = 1
-let g:GtagsCscope_Auto_Load = 1
-let g:GtagsCscope_Auto_Map = 1
-let g:GtagsCscope_Quiet  = 1
 
 " NERDTree
 let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '\.[s]o$', '\.a$']

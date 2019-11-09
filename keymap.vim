@@ -47,6 +47,10 @@ inoremap <silent> <C-l> <Right>
 inoremap <silent> <C-h> <Left>
 inoremap <silent> <C-j> <Down>
 inoremap <silent> <C-k> <Up>
+cnoremap <C-d> <DEL>
+cnoremap <C-a> <HOME>
+cnoremap <C-h> <Left>
+cnoremap <C-l> <Right>
 nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap <leader>[ O<ESC>
 nnoremap <leader>] o<ESC>
