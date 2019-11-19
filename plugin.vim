@@ -10,8 +10,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
-Plug 'scrooloose/nerdtree',{'on':['NERDTreeToggle']}
-Plug 'majutsushi/tagbar',{'on':['TagbarToggle']}
 call plug#end()
 
 " delimitMate
