@@ -44,4 +44,4 @@ endfunction
 let g:ft_man_open_mode = 'vert'
 
 " fzf.vim
-command! -bang -nargs=* -complete=file Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ". expand('<args>'), 1, <bang>0)
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always ".shellescape(<q-args>), 1, <bang>0)
