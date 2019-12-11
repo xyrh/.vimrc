@@ -43,8 +43,8 @@ inoremap <silent><m-0> <ESC>:tabn 10<cr>
 
 inoremap <silent> <C-e> <END>
 inoremap <silent> <C-a> <HOME>
-inoremap <silent> <C-l> <Right>
-inoremap <silent> <C-h> <Left>
+inoremap <silent> <C-f> <Right>
+inoremap <silent> <C-b> <Left>
 inoremap <silent> <C-j> <Down>
 inoremap <silent> <C-k> <Up>
 cnoremap <C-d> <DEL>
