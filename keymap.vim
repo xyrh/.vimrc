@@ -59,7 +59,6 @@ nnoremap <F7> :NERDTreeToggle<CR>
 nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F3>
 
-nnoremap q :q<CR>
 nnoremap <C-n> :call ShowFuncName()<CR>
 nnoremap <C-p> :call JumpFuncName()<CR>
 nnoremap ; :Rg <C-R>=expand("<cword>")<CR>
