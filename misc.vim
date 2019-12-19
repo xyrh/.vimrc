@@ -26,7 +26,9 @@ endfunction
 function! ShowFuncName()
   let lnum = line(".")
   let col = col(".")
-  call popup_atcursor(getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW')), #{line: lnum-1,col:col})
+  echohl ModeMsg
+  echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
+  echohl None
   call search("\\%" . lnum . "l" . "\\%" . col . "c")
 endfunction
 
