@@ -1,30 +1,15 @@
 set nocompatible
 
-if has('autocmd')
-	filetype plugin indent on
-endif
-
-if has('syntax') && !exists('g:syntax_on')
-	syntax enable
-endif
-
-if has("termguicolors")
-	let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
-	let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
-	set termguicolors
-endif
+filetype plugin indent on
+syntax enable
 
 let mapleader=" "
 set shortmess=atI
 
-set ttimeout
-set ttimeoutlen=50
-set updatetime=2000
-
 set number
 set laststatus=2
-set nofoldenable
 set autoread
+set updatetime=2000
 
 set hidden
 set showmatch
@@ -32,7 +17,6 @@ set matchtime=2
 set wildmenu
 set wildmode=list:longest,full
 set lazyredraw
-set ttyfast
 set showcmd
 set splitright
 set splitbelow
@@ -40,9 +24,6 @@ set splitbelow
 set ffs=unix,mac,dos
 set backspace=indent,eol,start
 set signcolumn=yes
-set nrformats-=octal
-set display+=lastline
-set sessionoptions-=options
 
 set autoindent
 set cindent
@@ -65,5 +46,3 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set cscopetag
 set completeopt-=preview
 set background=dark
-set keywordprg=:Man\ -s2 
-"set makeprg=sh\ mk.sh
