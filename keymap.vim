@@ -49,8 +49,8 @@ nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 
 set pastetoggle=<F3>
 
-nnoremap <C-p> :Rg <C-R>=expand("<cword>")<CR>
+nnoremap <C-n> :Rg <C-R>=expand("<cword>")<CR>
+nnoremap <C-p> :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
-nmap <unique> s <Plug>MarkSet
-nnoremap <nowait> \ :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
+nmap <C-j> <Plug>MarkSet
