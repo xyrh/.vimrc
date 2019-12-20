@@ -45,18 +45,8 @@ inoremap <silent> <C-e> <END>
 inoremap <silent> <C-a> <HOME>
 inoremap <silent> <C-f> <Right>
 inoremap <silent> <C-b> <Left>
-inoremap <silent> <C-j> <Down>
-inoremap <silent> <C-k> <Up>
-cnoremap <C-d> <DEL>
-cnoremap <C-a> <HOME>
-cnoremap <C-h> <Left>
-cnoremap <C-l> <Right>
 nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
-nnoremap <leader>[ O<ESC>
-nnoremap <leader>] o<ESC>
 
-nnoremap <F7> :NERDTreeToggle<CR>
-nnoremap <F8> :TagbarToggle<CR>
 set pastetoggle=<F3>
 
 nnoremap <C-n> :call ShowFuncName()<CR>
