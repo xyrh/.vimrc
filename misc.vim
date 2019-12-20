@@ -19,19 +19,6 @@ function! s:key_escape(name, code)
 	endif
 endfunc
 
-function! JumpFuncName()
-  call search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW')
-endfunction
-
-function! ShowFuncName()
-  let lnum = line(".")
-  let col = col(".")
-  echohl ModeMsg
-  echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
-  echohl None
-  call search("\\%" . lnum . "l" . "\\%" . col . "c")
-endfunction
-
 if &synmaxcol == 3000
   " Lowering this improves performance in files with long lines.
   set synmaxcol=500
