@@ -49,9 +49,7 @@ nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 
 set pastetoggle=<F3>
 
-nnoremap <C-n> :call ShowFuncName()<CR>
-nnoremap <C-p> :call JumpFuncName()<CR>
-nnoremap ; :Rg <C-R>=expand("<cword>")<CR>
+nnoremap <C-p> :Rg <C-R>=expand("<cword>")<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
 nmap <unique> s <Plug>MarkSet
