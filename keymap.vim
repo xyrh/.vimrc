@@ -26,6 +26,7 @@ inoremap <silent> <C-e> <END>
 inoremap <silent> <C-a> <HOME>
 inoremap <silent> <C-f> <Right>
 inoremap <silent> <C-b> <Left>
+
 nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap <C-n> :Rg <C-R>=expand("<cword>")<CR>
 nnoremap <C-p> :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
