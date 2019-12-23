@@ -31,4 +31,4 @@ nnoremap <C-n> :Rg <C-R>=expand("<cword>")<CR>
 nnoremap <C-p> :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
-nmap <C-j> <Plug>MarkSet
+nmap <C-m> <Plug>MarkSet
