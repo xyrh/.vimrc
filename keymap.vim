@@ -28,5 +28,7 @@ inoremap <silent> <C-f> <Right>
 inoremap <silent> <C-b> <Left>
 
 nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
-nnoremap <C-p> :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
+nnoremap <nowait> \ :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
+nnoremap <C-_> :Files<CR>
+nnoremap <M-/> :BTags<CR>
 nmap <C-m> <Plug>MarkSet
