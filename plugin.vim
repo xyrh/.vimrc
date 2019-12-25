@@ -3,7 +3,7 @@ Plug 'mhinz/vim-signify'
 Plug 'Raimondi/delimitMate'
 Plug 'xyrh/global.vim'
 Plug 'easymotion/vim-easymotion'
-Plug 'junegunn/seoul256.vim'
+Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -26,9 +26,9 @@ let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$',
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" seoul256
-let g:seoul256_srgb = 1
-colorscheme seoul256
+" gruvbox
+let g:gitgutter_override_sign_column_highlight = 1
+colorscheme gruvbox
 
 " lightline
 let g:lightline = {
