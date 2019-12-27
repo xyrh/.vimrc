@@ -27,6 +27,7 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " gruvbox
+let g:gruvbox_termcolors = 16
 let g:gitgutter_override_sign_column_highlight = 1
 colorscheme gruvbox
 
@@ -45,3 +46,6 @@ let g:ft_man_open_mode = 'vert'
 
 " fzf.vim
 command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always ".shellescape(<q-args>), 1, <bang>0)
+
+" vim-mark
+let g:mw_no_mappings = 1
