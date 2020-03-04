@@ -32,4 +32,3 @@ nnoremap <nowait> \ :call fzf#run({'source': 'global -c', 'down': '40%', 'sink':
 nnoremap <C-_> :Files<CR>
 nnoremap <M-/> :BTags<CR>
 nnoremap <M-=> :terminal<CR>
-nmap <M-m> <Plug>MarkSet
