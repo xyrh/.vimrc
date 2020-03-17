@@ -16,6 +16,7 @@ set showmatch
 set matchtime=2
 set wildmenu
 set wildmode=list:longest,full
+set ttyfast
 set lazyredraw
 set showcmd
 set splitright
