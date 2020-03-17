@@ -25,6 +25,7 @@ set splitbelow
 set ffs=unix,mac,dos
 set backspace=indent,eol,start
 set signcolumn=yes
+set synmaxcol=200
 
 set autoindent
 set cindent
