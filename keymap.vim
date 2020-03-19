@@ -32,6 +32,6 @@ nnoremap <C-P> :Files<CR>
 nnoremap <M-n> :BTags<CR>
 nnoremap <C-N> :BLines<CR>
 nnoremap <M-p> :Tags<CR>
-nnoremap <nowait> \ :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
+nnoremap <M-/> :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
 nmap <M-m> <Plug>MarkSet
 nmap <M-l> <Plug>MarkAllClear
