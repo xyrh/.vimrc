@@ -19,7 +19,7 @@ function! s:gtags_sink(lines)
   if len(a:lines) < 2
     return
   endif
-  silent execute 'tag ' . split(a:lines[1], '')[0]
+  execute 'tag ' . split(a:lines[1], '')[0]
 endfunction
 
 function! fzf#vim#gtags(query, ...)
