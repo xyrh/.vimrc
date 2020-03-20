@@ -31,7 +31,6 @@ nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap <C-P> :Files<CR>
 nnoremap <M-n> :BTags<CR>
 nnoremap <C-N> :BLines<CR>
-nnoremap <M-p> :Tags<CR>
-nnoremap <M-/> :call fzf#run({'source': 'global -c', 'down': '40%', 'sink': 'tag'})<CR>
+nnoremap <M-p> :Gtags<CR>
 nmap <M-m> <Plug>MarkSet
 nmap <M-l> <Plug>MarkAllClear
