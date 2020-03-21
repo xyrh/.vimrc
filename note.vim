@@ -31,22 +31,17 @@ function! fzf#vim#gtags(query, ...)
   \ 'options': extend(opts, ['--nth', '1..2', '-m', '--tiebreak=begin', '--prompt', 'Gtags> ', '--query', a:query])}, a:000)
 endfunction
 
-function! s:ag_to_qf(line, has_column)
-  let parts = split(a:line, '[^:]\zs:\ze[^:]')
-  let text = join(parts[(a:has_column ? 3 : 2):], ':')
-  if filereadable(parts[0])
-    let dict = {'filename': &acd ? fnamemodify(parts[0], ':p') : parts[0], 'lnum': parts[1], 'text': text}
-    if a:has_column
-      let dict.col = parts[2]
-    endif
-  else
-    let dict = {'filename': &acd ? fnamemodify(expand('%'), ':p') : expand('%'), 'lnum': parts[0], 'text': text}
-    if a:has_column
-      let dict.col = parts[1]
-    endif
+function! s:ag_handler(lines, has_column)
+  if len(a:lines) < 2
+    return
   endif
-  return dict
-endfunction
+
+  let lines = copy(a:lines)
+  if !filereadable(split(a:lines[1], ':')[0])
+	  let lines[1] = expand('%').':'.a:lines[1]
+  endif
+
+  let list = map(filter(lines[1:], 'len(v:val)'), 's:ag_to_qf(v:val, a:has_column)')
 
 function! fzf#vim#grep(grep_command, has_column, ...)
   let cmd = a:grep_command
