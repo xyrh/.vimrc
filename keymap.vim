@@ -32,5 +32,6 @@ nnoremap <C-P> :Files<CR>
 nnoremap <M-n> :BTags<CR>
 nnoremap <C-N> :Rg |"
 nnoremap <M-p> :Gtags<CR>
+nnoremap <C-_> :History<CR>
 nmap <M-m> <Plug>MarkSet
 nmap <M-l> <Plug>MarkAllClear
