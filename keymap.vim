@@ -28,11 +28,12 @@ inoremap <silent> <C-f> <Right>
 inoremap <silent> <C-b> <Left>
 
 nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
-nnoremap <C-P> :Files<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <C-n> :BLines<CR>
 nnoremap <M-n> :BTags<CR>
-nnoremap <C-N> :BLines<CR>
 nnoremap <M-p> :Gtags<CR>
 nnoremap <M-f> :call ShowFuncName()<CR>
-nnoremap <C-_> :History<CR>
+nnoremap <M-h> :History<CR>
+nnoremap <M-g> :Rg |"
 nmap <M-m> <Plug>MarkSet
 nmap <M-l> <Plug>MarkAllClear
