@@ -17,15 +17,6 @@ if has('nvim') == 0 && has('gui_running') == 0
     endfor
 endif
 
-function! ShowFuncName()
-  let lnum = line(".")
-  let col = col(".")
-  echohl ModeMsg
-  echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
-  echohl None
-  call search("\\%" . lnum . "l" . "\\%" . col . "c")
-endfunction
-
 vnoremap < <gv
 vnoremap > >gv
 
@@ -39,7 +30,7 @@ inoremap <silent> <C-b> <Left>
 nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap <C-P> :Files<CR>
 nnoremap <M-n> :BTags<CR>
-nnoremap <C-N> :Rg |"
+nnoremap <C-N> :RG<CR>
 nnoremap <M-p> :Gtags<CR>
 nnoremap <M-f> :call ShowFuncName()<CR>
 nnoremap <C-_> :History<CR>
