@@ -18,9 +18,6 @@ let delimitMate_expand_cr = 1
 let g:EasyMotion_do_mapping = 1
 let g:EasyMotion_leader_key = '<leader>'
 
-" NERDTree
-let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$', '\.[s]o$', '\.a$']
-
 " completor.vim
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
