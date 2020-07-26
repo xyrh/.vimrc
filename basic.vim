@@ -11,6 +11,11 @@ set laststatus=2
 set autoread
 set updatetime=2000
 
+set termguicolors
+if &term =~ '256color' && $TMUX != ''
+   set t_ut=
+endif
+
 set hidden
 set showmatch
 set matchtime=2

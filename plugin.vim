@@ -24,8 +24,6 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " gruvbox
 let g:gitgutter_override_sign_column_highlight = 1
-set termguicolors
-set t_ut=
 colorscheme gruvbox
 
 " lightline
