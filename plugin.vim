@@ -6,6 +6,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
@@ -44,3 +46,6 @@ command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-hea
 
 " vim-mark
 let g:mw_no_mappings = 1
+
+" ranger.vim
+let g:ranger_map_keys = 0

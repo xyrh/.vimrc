@@ -18,6 +18,10 @@ call s:key_escape('<F4>', 'OS')
 
 set keywordprg=:Man\ -s2 
 
+function! JumpFuncName()
+  call search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW')
+endfunction
+
 function! ShowFuncName()
   let lnum = line(".")
   let col = col(".")
