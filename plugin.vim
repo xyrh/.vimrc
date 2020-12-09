@@ -35,7 +35,7 @@ let g:lightline = {
       \ }
       \ }
 function! LightlineFilename()
-  return expand('%:~')
+  return fnamemodify(resolve(expand('%:~')), ':.')
 endfunction
 
 " Man
