@@ -59,4 +59,4 @@ nnoremap <M-h> :History<CR>
 nnoremap <M-g> :Rg |"
 nmap <M-m> <Plug>MarkSet
 nmap <M-l> <Plug>MarkAllClear
-nnoremap <nowait> \ :Ranger<CR>
+nnoremap <nowait> \ :NnnPicker %:p:h<CR>

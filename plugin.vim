@@ -6,7 +6,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
-Plug 'francoiscabrol/ranger.vim'
+Plug 'mcchrish/nnn.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -47,5 +47,12 @@ command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-hea
 " vim-mark
 let g:mw_no_mappings = 1
 
-" ranger.vim
-let g:ranger_map_keys = 0
+" nnn.vim
+let g:nnn#set_default_mappings = 0
+let g:nnn#replace_netrw = 1
+let g:nnn#command = 'nnn -H'
+let g:nnn#layout = { 'left': '~20%' } " or right, up, down
+let g:nnn#action = {
+      \ '<c-t>': 'tab split',
+      \ '<c-x>': 'split',
+      \ '<c-v>': 'vsplit' }
