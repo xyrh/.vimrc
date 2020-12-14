@@ -55,3 +55,4 @@ set csprg=gtags-cscope
 set completeopt-=preview
 
 set path+=include
+set grepprg=rg\ --vimgrep\ --smart-case\ --follow
