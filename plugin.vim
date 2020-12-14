@@ -50,7 +50,6 @@ let g:mw_no_mappings = 1
 " nnn.vim
 let g:nnn#set_default_mappings = 0
 let g:nnn#replace_netrw = 1
-let g:nnn#command = 'nnn -H'
 let g:nnn#layout = { 'left': '~20%' } " or right, up, down
 let g:nnn#action = {
       \ '<c-t>': 'tab split',

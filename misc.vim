@@ -31,6 +31,14 @@ function! ShowFuncName()
   call search("\\%" . lnum . "l" . "\\%" . col . "c")
 endfunction
 
+function s:gtags_search(line)
+  let l:line = split(a:line)[1]
+  let l:file = split(a:line)[2]
+  execute 'edit +'.l:line l:file
+endfunction
+command! -nargs=0 Gtags call fzf#run(fzf#wrap({'source':'global -x .', 'sink':function('<sid>gtags_search'),
+		 \ 'options': ['-m', '-d', '\t', '--with-nth', '1,2', '-n', '1', '--prompt', 'Gtags> ']}))
+
 autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
   \ |   exe "normal! g`\""

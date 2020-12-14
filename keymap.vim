@@ -54,9 +54,8 @@ nnoremap <C-n> :BLines<CR>
 nnoremap <M-n> :BTags<CR>
 nnoremap <M-p> :Gtags<CR>
 nnoremap <M-f> :call ShowFuncName()<CR>
-nnoremap <M-d> :call JumpFuncName()<CR>
+nnoremap <M-g> :call JumpFuncName()<CR>
 nnoremap <M-h> :History<CR>
-nnoremap <M-g> :Rg |"
 nmap <M-m> <Plug>MarkSet
 nmap <M-l> <Plug>MarkAllClear
 nnoremap <nowait> \ :NnnPicker %:p:h<CR>
