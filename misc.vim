@@ -37,7 +37,7 @@ function s:gtags_search(line)
   execute 'edit +'.l:line l:file
 endfunction
 command! -nargs=0 Gtags call fzf#run(fzf#wrap({'source':'global -x .', 'sink':function('<sid>gtags_search'),
-		 \ 'options': ['-m', '-d', '\t', '--with-nth', '1,2', '-n', '1', '--prompt', 'Gtags> ']}))
+		 \ 'options': ['--nth', '1..2', '-m', '--tiebreak=begin', '--prompt', 'Gtags> ']}))
 
 autocmd BufReadPost *
   \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
