@@ -15,39 +15,14 @@ function! ShowFuncName()
 endfunction
 
 " fzf.vim
-function! s:gtags_sink(lines)
-  if len(a:lines) < 2
-    return
-  endif
-  execute 'tag ' . split(a:lines[1], '')[0]
-endfunction
-
-function! fzf#vim#gtags(query, ...)
-  let opts = []
-
-  return s:fzf('gtags', {
-  \ 'source':  'global -x .',
-  \ 'sink*':   s:function('s:gtags_sink'),
-  \ 'options': extend(opts, ['--nth', '1..2', '-m', '--tiebreak=begin', '--prompt', 'Gtags> ', '--query', a:query])}, a:000)
-endfunction
-
-function! s:ag_handler(lines, has_column)
-  if len(a:lines) < 2
-    return
-  endif
-
-  let lines = copy(a:lines)
-  if !filereadable(split(a:lines[1], ':')[0])
-	  let lines[1] = expand('%').':'.a:lines[1]
-  endif
-
-  let list = map(filter(lines[1:], 'len(v:val)'), 's:ag_to_qf(v:val, a:has_column)')
-
 function! fzf#vim#grep(grep_command, has_column, ...)
-  let cmd = a:grep_command
-  echomsg cmd
-  if match(a:grep_command, matchstr(a:grep_command, '\S\+\s%\S'))
-	  let cmd =  substitute(a:grep_command, '\s%', '', '') . ' ' .  expand('%')
-  endif
+	let fzf_cmd = a:grep_command
+	if a:grep_command[-2:-2] == '/'
+		let fzf_str = substitute(a:grep_command, "\\s\\S\\+/'", "'", "")
+		let fzf_path = matchstr(a:grep_command, "\\s\\S\\+/'")[1:-2]
+		if isdirectory(fzf_path)
+			let cmd = fzf_str . ' ' . fzf_path
+		endif
+	endif
 
-  let $FZF_DEFAULT_COMMAND = cmd
+    let $FZF_DEFAULT_COMMAND = fzf_cmd
