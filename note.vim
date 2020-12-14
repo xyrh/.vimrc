@@ -21,7 +21,7 @@ function! fzf#vim#grep(grep_command, has_column, ...)
 		let fzf_str = substitute(a:grep_command, "\\s\\S\\+/'", "'", "")
 		let fzf_path = matchstr(a:grep_command, "\\s\\S\\+/'")[1:-2]
 		if isdirectory(fzf_path)
-			let cmd = fzf_str . ' ' . fzf_path
+			let fzf_cmd = fzf_str . ' ' . fzf_path
 		endif
 	endif
 
