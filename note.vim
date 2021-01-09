@@ -23,7 +23,7 @@ function! fzf#vim#grep(grep_command, has_column, ...)
 		if isdirectory(fzf_path)
 			let fzf_cmd = fzf_str . ' ' . fzf_path
 		endif
-	elseif match(a:grep_command, expand('%'))
+	elseif match(a:grep_command, expand('%')) > 0
 		let fzf_str = substitute(a:grep_command, "\\s\\S\\+'", "'", "")
 		let fzf_path = expand('%:h')
 		let fzf_cmd = fzf_str . ' ' . fzf_path
