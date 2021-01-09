@@ -48,6 +48,11 @@ inoremap <silent> <C-a> <HOME>
 inoremap <silent> <C-f> <Right>
 inoremap <silent> <C-b> <Left>
 
+cnoremap <C-e> <END>
+cnoremap <C-a> <HOME>
+cnoremap <C-f> <Right>
+cnoremap <C-b> <Left>
+
 nnoremap <C-l> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-l>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-n> :BLines<CR>
