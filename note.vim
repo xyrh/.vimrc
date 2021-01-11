@@ -25,7 +25,7 @@ function! fzf#vim#grep(grep_command, has_column, ...)
 		endif
 	elseif match(a:grep_command, expand('%')) > 0
 		let fzf_str = substitute(a:grep_command, "\\s\\S\\+'", "'", "")
-		let fzf_path = expand('%:h')
+		let fzf_path = fnamemodify(expand('%:h'), ':.')
 		let fzf_cmd = fzf_str . ' ' . fzf_path
 	endif
 
