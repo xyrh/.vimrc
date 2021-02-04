@@ -1,8 +1,6 @@
 set nocompatible
 
 filetype plugin indent on
-set background=dark
-syntax enable
 
 let mapleader=" "
 set shortmess=atI
