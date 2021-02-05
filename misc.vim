@@ -18,7 +18,7 @@ call s:key_escape('<F4>', 'OS')
 
 set keywordprg=:Man\ -s2 
 
-function Tapi_TabDrop(bufnum, arglist)
+function! Tapi_TabDrop(bufnum, arglist)
 	if len(a:arglist) == 1
 	  exec ":tab drop " . a:arglist[0]
 	endif
