@@ -30,3 +30,6 @@ function! fzf#vim#grep(grep_command, has_column, ...)
 	endif
 
     let $FZF_DEFAULT_COMMAND = fzf_cmd
+
+" use drop in terminal
+echo -e "\e]51;[\"call\", \"Tapi_TabDrop\", [\"$1\"]]\x07"
