@@ -42,6 +42,16 @@ inoremap <silent><m-7> <ESC>:tabn 7<cr>
 inoremap <silent><m-8> <ESC>:tabn 8<cr>
 inoremap <silent><m-9> <ESC>:tabn 9<cr>
 inoremap <silent><m-0> <ESC>:tabn 10<cr>
+tnoremap <silent><m-1> <C-W>:tabn 1<CR>
+tnoremap <silent><m-2> <C-W>:tabn 2<CR>
+tnoremap <silent><m-3> <C-W>:tabn 3<CR>
+tnoremap <silent><m-4> <C-W>:tabn 4<CR>
+tnoremap <silent><m-5> <C-W>:tabn 5<CR>
+tnoremap <silent><m-6> <C-W>:tabn 6<CR>
+tnoremap <silent><m-7> <C-W>:tabn 7<CR>
+tnoremap <silent><m-8> <C-W>:tabn 8<CR>
+tnoremap <silent><m-9> <C-W>:tabn 9<CR>
+tnoremap <silent><m-0> <C-W>:tabn 10<CR>
 
 inoremap <silent> <C-e> <END>
 inoremap <silent> <C-a> <HOME>
