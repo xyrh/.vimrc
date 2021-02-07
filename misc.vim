@@ -20,7 +20,7 @@ set keywordprg=:Man\ -s2
 
 function! Tapi_TabDrop(bufnum, arglist)
   if len(a:arglist) == 1
-	exec ":tab drop " . a:arglist[0]
+	exec ":$tab drop " . a:arglist[0]
   endif
 endfunc
 
