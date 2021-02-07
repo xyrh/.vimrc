@@ -8,6 +8,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'mcchrish/nnn.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
