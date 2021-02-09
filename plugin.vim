@@ -4,12 +4,12 @@ Plug 'Raimondi/delimitMate'
 Plug 'xyrh/global.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'sheerun/vim-polyglot'
-Plug 'morhetz/gruvbox'
 Plug 'itchyny/lightline.vim'
 Plug 'maralla/completor.vim'
 Plug 'mcchrish/nnn.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
+Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
@@ -26,13 +26,13 @@ let g:EasyMotion_leader_key = '<leader>'
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" gruvbox
-let g:gitgutter_override_sign_column_highlight = 1
-set background=dark
-colorscheme gruvbox
+" seoul256
+let g:seoul256_srgb = 1
+colorscheme seoul256
 
 " lightline
 let g:lightline = {
+      \ 'colorscheme': 'seoul256',
       \ 'component_function': {
       \   'filename': 'LightlineFilename',
       \ }
