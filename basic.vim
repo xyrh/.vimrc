@@ -2,16 +2,17 @@ set nocompatible
 
 filetype plugin indent on
 
-let mapleader=" "
+syntax enable
+set t_ut=
+set termguicolors
+
 set shortmess=atI
+let mapleader=" "
 
 set number
 set laststatus=2
 set autoread
 set updatetime=2000
-
-set t_ut=
-set termguicolors
 
 set hidden
 set showmatch
