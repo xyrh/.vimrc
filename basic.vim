@@ -4,7 +4,7 @@ filetype plugin indent on
 
 set background=dark
 syntax enable
-set t_ut=
+"set t_ut=
 set termguicolors
 
 set shortmess=atI
