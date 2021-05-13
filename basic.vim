@@ -6,6 +6,7 @@ set background=dark
 syntax enable
 set t_ut=
 set termguicolors
+set termwinscroll=65536
 
 set shortmess=atI
 let mapleader=" "
