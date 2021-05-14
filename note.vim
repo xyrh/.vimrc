@@ -32,8 +32,14 @@ function! fzf#vim#grep(grep_command, has_column, ...)
     let $FZF_DEFAULT_COMMAND = fzf_cmd
 
 " use drop in terminal
-path=`pwd`/$1
-if [ ! -e $path ];then 
+#!/bin/bash
+
+path=
+if [[ "${1:0:1}" == / || "${1:0:2}" == ~[/a-z] ]]
+then
 	path=$1
+else
+	path=`pwd`/$1
 fi
+
 echo -e "\e]51;[\"call\", \"Tapi_TabDrop\", [\"$path\"]]\x07"
