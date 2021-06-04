@@ -9,6 +9,7 @@ Plug 'morhetz/gruvbox'
 Plug 'maralla/completor.vim'
 Plug 'mcchrish/nnn.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
